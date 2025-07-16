@@ -1,38 +1,179 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-image: url('./assests/hand.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  display: flex;
   min-height: 100vh;
+}
+
+.left-panel {
+  width: 40%;
+
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px 24px 0 40px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.03);
+  min-height: 100vh;
+}
+
+.right-panel {
+  width: 60%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: rgba(79, 104, 146, 0.14);
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.case-review {
+  background: linear-gradient(120deg, #fff 70%, #c1c0d7 100%);
+  border-radius: 24px;
+  padding: 32px 24px;
+  margin-bottom: 28px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slots-circle {
+  position: absolute;
+  top: 32px;
+  right: -60px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, #4d4e8b 60%, #c1c0d7 100%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-20deg);
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0 0;
+}
+
+.features li {
+  padding-left: 25px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.features li:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  background-color: #4e4c66;
+  box-shadow: 2px 2px 5px #c3c1d3;
+}
+
+.help-text {
+  margin: 16px 0;
+  color: #6b6b6b;
+}
+
+.contact-btn {
+  background: #bfa376;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.info-banner {
+  background: #f3e7df;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 24px;
+  font-size: 1rem;
+}
+
+.info-banner .highlight {
+  color: #3d3570;
+}
+
+.claim-form {
+  background: rgba(255,255,255,0.72);
+  border-radius: 24px;
+  padding: 32px 32px 24px 32px;
+  width: 420px;
+  box-shadow: 0 4px 24px rgba(90,106,139,0.12);
+  backdrop-filter: blur(2px);
+}
+
+.claim-form h2 {
+  margin-top: 0;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.claim-form textarea {
+  width: 100%;
+  min-height: 60px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  resize: vertical;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.checkbox-row input[type="checkbox"] {
+  margin-top: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #f8e9df;
+  color: #222;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background: #e2d2c1;
 }
