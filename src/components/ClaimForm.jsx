@@ -60,7 +60,7 @@ const ClaimForm = () => {
         component="form"
         onSubmit={handleSubmit}
         sx={{
-          p: { xs: 2, sm: 4 },
+          p: { xs: 2, sm: 8 },
           background: "#2E4A7D", // Simulate overlay
           opacity: "61%",
           borderRadius: 4,

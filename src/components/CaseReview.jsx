@@ -4,39 +4,50 @@ import ShieldOutlinedIcon from '@mui/icons-material/ShieldOutlined';
 import CheckCircleOutlinedIcon from '@mui/icons-material/CheckCircleOutlined';
 import GavelOutlinedIcon from '@mui/icons-material/GavelOutlined';
 
+import ReactCurvedText from 'react-curved-text';
+
 const OnlySlotsBadge = () => (
   <Box
     sx={{
       position: 'absolute',
-      top: '50%',
-      right: { xs: -60, sm: -90 },
+      top: '38%',
+      right: { xs: -60, sm: 222 },
       transform: 'translateY(-50%)',
-      width: 200,
-      height: 200,
+      width: 290,
+      height: 290,
       bgcolor: '#27416b',
       borderRadius: '50%',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      zIndex: 10,
+      zIndex: 2,
       boxShadow: 3,
     }}
   >
-    <Typography
-      sx={{
-        color: '#fff',
-        fontWeight: 700,
-        textAlign: 'center',
-        fontSize: 24,
-        letterSpacing: 1,
-        lineHeight: 1.15,
-        transform: 'rotate(-27deg)'
+    
+    <ReactCurvedText
+      width={290}
+      height={290}
+      cx={145}
+      cy={145}
+      rx={120}
+      ry={120}
+      opacity={100}
+      startOffset={215} // Adjust to position text
+      text="ONLY 6 SLOTS LEFT"
+      textProps={{
+        style: {
+          fill: '#fff',
+          fontWeight: 700,
+          fontSize: 30,
+          letterSpacing: 2,
+   
+        },
       }}
-    >
-      ONLY 6 SLOTS<br />LEFT
-    </Typography>
+    />
   </Box>
 );
+
 
 const BenefitsList = () => (
   <Stack spacing={2} sx={{ mt: 4 }}>
@@ -59,12 +70,12 @@ const CaseReviewCard = () => (
   <Box
     sx={{
       display: 'flex',
-      width: { xs: '100%', sm: 500 },
+      width: { xs: '100%', sm: 553 },
       borderRadius: 5,
       boxShadow: 8,
       overflow: 'hidden',
       bgcolor: '#fff',
-      minHeight: 330,
+      minHeight: 577,
       position: 'relative',
       mx: 'auto',
     }}
@@ -83,6 +94,7 @@ const CaseReviewCard = () => (
         position: 'relative',
         zIndex: 2,
         minWidth: 180,
+      borderRadius: "12px"
       }}
     >
       <Box>
