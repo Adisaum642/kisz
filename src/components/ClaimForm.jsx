@@ -65,6 +65,7 @@ const ClaimForm = () => {
           opacity: "61%",
           borderRadius: 4,
           maxWidth: 550,
+          height: 733,
           margin: '40px auto',
           boxShadow: 3,
           color: 'white',
@@ -328,6 +329,7 @@ InputLabelProps={{
             fontWeight: 'bold',
             fontSize: 18,
             ':hover': { bgcolor: '#f3eae3' },
+            opacity:"500%",
           }}
         >
           Start your claim now

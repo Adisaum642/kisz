@@ -3,7 +3,7 @@ import React from "react";
 function InfoBanner() {
   return (
     <div className="info-banner">
-      <strong>Have you or a loved one been affected by <span className="highlight">Mesothelioma?</span></strong>
+     <h2> <strong>Have you or a loved one been affected by <span className="highlight">Mesothelioma?</span></strong></h2>
       <p>
         As a woman, you’ve carried the weight of care, love, and resilience. Now it’s time someone stands with you.
       </p>
